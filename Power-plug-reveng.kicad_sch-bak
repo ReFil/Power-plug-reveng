@@ -2331,7 +2331,7 @@
   (symbol (lib_id "Device:R") (at 267.97 59.69 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 1d0ee1ed-e1de-4f09-92e2-b144dc5a214f)
-    (property "Reference" "R8" (id 0) (at 265.43 58.4199 0)
+    (property "Reference" "R?" (id 0) (at 265.43 58.4199 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (id 1) (at 265.43 60.9599 0)
@@ -2441,7 +2441,7 @@
     (property "Value" "LED_Dual_KAK" (id 1) (at 218.44 34.9884 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "LED_THT:LED_D3.0mm-3" (id 2) (at 210.82 34.925 0)
+    (property "Footprint" "" (id 2) (at 210.82 34.925 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 210.82 34.925 0)
@@ -2790,7 +2790,7 @@
   (symbol (lib_id "Device:R") (at 266.065 67.31 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 869a82fa-1d5f-42cd-af99-d121af716d47)
-    (property "Reference" "R20" (id 0) (at 266.065 60.96 90))
+    (property "Reference" "R?" (id 0) (at 266.065 60.96 90))
     (property "Value" "10" (id 1) (at 266.065 63.5 90))
     (property "Footprint" "" (id 2) (at 266.065 65.532 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -2805,7 +2805,7 @@
   (symbol (lib_id "Device:R") (at 271.78 62.23 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 8a362d40-32a8-4103-ac6d-45f3a39352d8)
-    (property "Reference" "R22" (id 0) (at 269.24 60.9599 0)
+    (property "Reference" "R?" (id 0) (at 269.24 60.9599 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (id 1) (at 269.24 63.4999 0)
@@ -2960,7 +2960,7 @@
   (symbol (lib_id "Device:R") (at 262.255 64.77 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9be12a25-a507-4629-968d-7fcb19ceab6d)
-    (property "Reference" "R19" (id 0) (at 262.255 58.42 90))
+    (property "Reference" "R?" (id 0) (at 262.255 58.42 90))
     (property "Value" "10" (id 1) (at 262.255 60.96 90))
     (property "Footprint" "" (id 2) (at 262.255 62.992 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -3145,10 +3145,10 @@
   (symbol (lib_id "Device:R") (at 274.955 64.77 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b990eb8e-ab79-479a-9b6c-c437b0ca5223)
-    (property "Reference" "R23" (id 0) (at 273.05 63.4999 0)
+    (property "Reference" "R?" (id 0) (at 272.415 63.4999 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "10k" (id 1) (at 273.05 66.0399 0)
+    (property "Value" "10k" (id 1) (at 272.415 66.0399 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "" (id 2) (at 273.177 64.77 90)
@@ -3180,7 +3180,7 @@
   (symbol (lib_id "Device:R") (at 269.24 69.85 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid c2e1dc67-ebab-490c-b13e-1375f65f2128)
-    (property "Reference" "R21" (id 0) (at 269.24 63.5 90))
+    (property "Reference" "R?" (id 0) (at 269.24 63.5 90))
     (property "Value" "10" (id 1) (at 269.24 66.04 90))
     (property "Footprint" "" (id 2) (at 269.24 68.072 90)
       (effects (font (size 1.27 1.27)) hide)
@@ -3316,7 +3316,7 @@
     (uuid d8eca052-8642-4efd-b5cf-5e0dc05d6fc6)
     (property "Reference" "U?" (id 0) (at 248.92 58.42 0))
     (property "Value" "BL0937" (id 1) (at 248.92 60.96 0))
-    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (id 2) (at 248.92 69.85 0)
+    (property "Footprint" "" (id 2) (at 248.92 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 248.92 69.85 0)
@@ -3470,7 +3470,7 @@
     (uuid f6a73e1b-b69d-4000-98e1-e910bdc04544)
     (property "Reference" "U?" (id 0) (at 90.17 72.39 0))
     (property "Value" "MP150" (id 1) (at 90.17 74.93 0))
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (id 2) (at 90.17 82.55 0)
+    (property "Footprint" "" (id 2) (at 90.17 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 90.17 82.55 0)
@@ -3678,9 +3678,6 @@
     (path "/41cb2aee-bf8b-43c8-ab92-640378b3f3bc"
       (reference "R7") (unit 1) (value "1k") (footprint "")
     )
-    (path "/1d0ee1ed-e1de-4f09-92e2-b144dc5a214f"
-      (reference "R8") (unit 1) (value "10k") (footprint "")
-    )
     (path "/56dbf7ed-cad8-4015-a99f-93c4925b4fe3"
       (reference "R9") (unit 1) (value "0.001") (footprint "")
     )
@@ -3702,21 +3699,6 @@
     (path "/3fb8212d-2fa9-4f68-9f59-0e3342b5a561"
       (reference "R16") (unit 1) (value "470") (footprint "")
     )
-    (path "/9be12a25-a507-4629-968d-7fcb19ceab6d"
-      (reference "R19") (unit 1) (value "10") (footprint "")
-    )
-    (path "/869a82fa-1d5f-42cd-af99-d121af716d47"
-      (reference "R20") (unit 1) (value "10") (footprint "")
-    )
-    (path "/c2e1dc67-ebab-490c-b13e-1375f65f2128"
-      (reference "R21") (unit 1) (value "10") (footprint "")
-    )
-    (path "/8a362d40-32a8-4103-ac6d-45f3a39352d8"
-      (reference "R22") (unit 1) (value "10k") (footprint "")
-    )
-    (path "/b990eb8e-ab79-479a-9b6c-c437b0ca5223"
-      (reference "R23") (unit 1) (value "10k") (footprint "")
-    )
     (path "/178ca55c-9011-4387-b43c-8c8b40d1eb0e"
       (reference "R24") (unit 1) (value "5.1k") (footprint "")
     )
@@ -3726,6 +3708,24 @@
     (path "/191e92a4-c76c-42b8-9c0a-90c182f4975a"
       (reference "R?") (unit 1) (value "10k") (footprint "")
     )
+    (path "/1d0ee1ed-e1de-4f09-92e2-b144dc5a214f"
+      (reference "R?") (unit 1) (value "10k") (footprint "")
+    )
+    (path "/869a82fa-1d5f-42cd-af99-d121af716d47"
+      (reference "R?") (unit 1) (value "10") (footprint "")
+    )
+    (path "/8a362d40-32a8-4103-ac6d-45f3a39352d8"
+      (reference "R?") (unit 1) (value "10k") (footprint "")
+    )
+    (path "/9be12a25-a507-4629-968d-7fcb19ceab6d"
+      (reference "R?") (unit 1) (value "10") (footprint "")
+    )
+    (path "/b990eb8e-ab79-479a-9b6c-c437b0ca5223"
+      (reference "R?") (unit 1) (value "10k") (footprint "")
+    )
+    (path "/c2e1dc67-ebab-490c-b13e-1375f65f2128"
+      (reference "R?") (unit 1) (value "10") (footprint "")
+    )
     (path "/765eccde-4d9c-452b-881b-713774a04424"
       (reference "U?") (unit 1) (value "Gosund-espessif") (footprint "")
     )
@@ -3733,10 +3733,10 @@
       (reference "U?") (unit 1) (value "AMS1117-3.3") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
     )
     (path "/d8eca052-8642-4efd-b5cf-5e0dc05d6fc6"
-      (reference "U?") (unit 1) (value "BL0937") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+      (reference "U?") (unit 1) (value "BL0937") (footprint "")
     )
     (path "/f6a73e1b-b69d-4000-98e1-e910bdc04544"
-      (reference "U?") (unit 1) (value "MP150") (footprint "Package_TO_SOT_SMD:SOT-23-5")
+      (reference "U?") (unit 1) (value "MP150") (footprint "")
     )
   )
 )
