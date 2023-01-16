@@ -104,13 +104,17 @@ void setup() {
 #ifdef SERIAL_EN
 
     // Init Serial port and clean garbage
-    Serial.begin(Serial_BAUDRATE);
-    Serial.println();
+    Serial.begin(115200);
+    Serial.println("Hello worls");
     Serial.println();
 #endif
 
-    BLEDevice::init("UoS Power monitor");
+    BLEDevice::init("UoS Power");
     BLEServer *pServer = BLEDevice::createServer();
+
+    pServer->setCallbacks(new MyServerCallbacks());
+
+    
     BLEService *pService = pServer->createService(SERVICE_UUID);
     pRxCharacteristic = pService->createCharacteristic(
                                            CHARACTERISTIC_UUID_RX,
@@ -129,9 +133,8 @@ void setup() {
 
     BLEAdvertising *pAdvertising = BLEDevice::getAdvertising();
     pAdvertising->addServiceUUID(SERVICE_UUID);
-    pAdvertising->setScanResponse(true);
-    pAdvertising->setMinPreferred(0x06);  // functions that help with iPhone connections issue
-    pAdvertising->setMinPreferred(0x12);
+    pAdvertising->setScanResponse(false);
+    pAdvertising->setMinPreferred(0x00);  // functions that help with iPhone connections issue
     BLEDevice::startAdvertising();
 
     #ifdef SERIAL_EN
@@ -174,6 +177,14 @@ void setup() {
 }
 
 char buffer[50];
+unsigned int power;
+uint16_t voltage;
+double current;
+unsigned int apppwr;
+int pfactor;
+unsigned long energy;
+
+
 
 void loop() {
 
@@ -183,19 +194,24 @@ void loop() {
     if ((millis() - last) > UPDATE_TIME) {
 
         last = millis();
+
+        power = hlw8012.getActivePower();
+        voltage = hlw8012.getVoltage();
+        current = hlw8012.getCurrent();
+        apppwr = hlw8012.getApparentPower();
+        pfactor = (100 * hlw8012.getPowerFactor());
+        energy = hlw8012.getEnergy();
+
+        pTxCharacteristic->setValue((uint8_t*)&voltage, 2);
+        
         #ifdef SERIAL_EN
-        hlw8012.getActivePower()
-        hlw8012.getVoltage()
-        hlw8012.getCurrent();
-        hlw8012.getApparentPower();
-        (100 * hlw8012.getPowerFactor());
-        hlw8012.getEnergy();
-        Serial.print("[HLW] Active Power (W)    : "); Serial.println(hlw8012.getActivePower());
-        Serial.print("[HLW] Voltage (V)         : "); Serial.println(hlw8012.getVoltage());
-        Serial.print("[HLW] Current (A)         : "); Serial.println(hlw8012.getCurrent());
-        Serial.print("[HLW] Apparent Power (VA) : "); Serial.println(hlw8012.getApparentPower());
-        Serial.print("[HLW] Power Factor (%)    : "); Serial.println((int) (100 * hlw8012.getPowerFactor()));
-        Serial.print("[HLW] Agg. energy (Ws)    : "); Serial.println(hlw8012.getEnergy());
+        
+        Serial.print("[HLW] Active Power (W)    : "); Serial.println(power);
+        Serial.print("[HLW] Voltage (V)         : "); Serial.println(voltage);
+        Serial.print("[HLW] Current (A)         : "); Serial.println(current);
+        Serial.print("[HLW] Apparent Power (VA) : "); Serial.println(apppwr);
+        Serial.print("[HLW] Power Factor (%)    : "); Serial.println(pfactor);
+        Serial.print("[HLW] Agg. energy (Ws)    : "); Serial.println(energy);
         Serial.println();
         #endif
 
