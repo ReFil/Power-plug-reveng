@@ -2149,7 +2149,7 @@
     (property "Reference" "R3" (id 0) (at 41.91 73.66 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "12M" (id 1) (at 41.91 76.2 0)
+    (property "Value" "1.2M" (id 1) (at 41.91 76.2 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "" (id 2) (at 41.783 74.93 90)
@@ -2400,7 +2400,7 @@
     (property "Reference" "R2" (id 0) (at 41.91 81.28 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "12M" (id 1) (at 41.91 83.82 0)
+    (property "Value" "1.2M" (id 1) (at 41.91 83.82 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "" (id 2) (at 41.783 82.55 90)
@@ -3667,10 +3667,10 @@
       (reference "R1") (unit 1) (value "10") (footprint "")
     )
     (path "/31586cd4-60ce-432c-acab-437680ac0516"
-      (reference "R2") (unit 1) (value "12M") (footprint "")
+      (reference "R2") (unit 1) (value "1.2M") (footprint "")
     )
     (path "/05b8257f-4837-40ff-83a9-aab2f51831f1"
-      (reference "R3") (unit 1) (value "12M") (footprint "")
+      (reference "R3") (unit 1) (value "1.2M") (footprint "")
     )
     (path "/471009a1-3e06-4fa3-b556-e3cfdb98a486"
       (reference "R6") (unit 1) (value "1k") (footprint "")
