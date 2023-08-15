@@ -123,7 +123,7 @@ class RelayCallbacks: public BLECharacteristicCallbacks {
             digitalWrite(RELAY_PIN, HIGH);
             break;
         case 2:
-            digitalWrite(RELAY_PIN, HIGH);
+            digitalWrite(RELAY_PIN, LOW);
             break;
         
         default:
